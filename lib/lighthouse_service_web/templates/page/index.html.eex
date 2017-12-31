@@ -1,0 +1,11 @@
+      <article>
+        <h2>nodes</h2>
+        <table id="nodes" class="display" cellspacing="0" width="100%">
+          <thead>
+              <tr>
+                  <th>ip</th>
+                  <th>data</th>
+              </tr>
+          </thead>
+        </table>
+      </article>
