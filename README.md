@@ -1,6 +1,8 @@
 # LighthouseService
 
-Web service for the lighthouse application.
+Web service for the [lighthouse](https://github.com/thomasvolk/lighthouse) application.
+
+If you start more than one server in a LAN network, they will find each other automatically.
 
 To start your Phoenix server:
 
@@ -9,13 +11,3 @@ To start your Phoenix server:
   * Start Phoenix endpoint with `mix phx.server`
 
 Now you can visit [`localhost:9996`](http://localhost:9996) from your browser.
-
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
-
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
