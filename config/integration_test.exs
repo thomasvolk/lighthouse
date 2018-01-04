@@ -19,8 +19,13 @@ config :lighthouse_service, LighthouseServiceWeb.Endpoint,
   root: "."
   #cache_static_manifest: "priv/static/cache_manifest.json"
 
+config :lighthouse,
+  udp_port: 9988,
+  node_lifespan: 1000,
+  broadcast_interval: 500
+
 # Do not print debug messages in production
-config :logger, level: :info
+config :logger, level: :debug
 
 # ## SSL Support
 #

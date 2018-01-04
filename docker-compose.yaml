@@ -1,0 +1,15 @@
+---
+version: "2"
+services:
+  node01:
+    build: .
+    ports:
+      - "9001:9996"
+  node02:
+    build: .
+    ports:
+      - "9002:9996"
+  node03:
+    build: .
+    ports:
+      - "9003:9996"
