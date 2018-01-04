@@ -39,6 +39,12 @@ environment :prod do
   set cookie: :"&)x}SSlo,;nYP[;|T=owH(rVzbr~%~Zm&Vlj7i%F_qTc@2qU9*,l/2c2D.v[Ltm:"
 end
 
+environment :integration_test do
+  set include_erts: true
+  set include_src: false
+  set cookie: :"&)x}SSlo,;nYP[;|T=owH(rVzbr~%~Zm&Vlj7i%F_qTc@2qU9*,l/2c2D.v[Ltm:"
+end
+
 # You may define one or more releases in this file.
 # If you have not set a default release, or selected one
 # when running `mix release`, the first release in the file
