@@ -1,8 +1,8 @@
 # Lighthouse
 
-Web service for the [lighthouse](https://github.com/thomasvolk/lighthouse) application.
+Web service including [lightbulb](https://github.com/thomasvolk/lightbulb) sevice to find othe node in a LAN network.
 
-If you start more than one server in a LAN network, they will find each other automatically.
+Lighthouse server find each other automatically via UDP.
 
 To start your Phoenix server:
 
