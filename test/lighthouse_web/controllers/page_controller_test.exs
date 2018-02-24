@@ -1,5 +1,5 @@
-defmodule LighthouseServiceWeb.PageControllerTest do
-  use LighthouseServiceWeb.ConnCase
+defmodule LighthouseWeb.PageControllerTest do
+  use LighthouseWeb.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

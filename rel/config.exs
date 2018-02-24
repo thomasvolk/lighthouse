@@ -50,8 +50,8 @@ end
 # when running `mix release`, the first release in the file
 # will be used by default
 
-release :lighthouse_service do
-  set version: current_version(:lighthouse_service)
+release :lighthouse do
+  set version: current_version(:lighthouse)
   set applications: [
     :runtime_tools
   ]

@@ -2,7 +2,7 @@ use Mix.Config
 
 # We don't run a server during test. If one is required,
 # you can enable the server option below.
-config :lighthouse_service, LighthouseServiceWeb.Endpoint,
+config :lighthouse, LighthouseWeb.Endpoint,
   http: [port: 9997],
   server: false
 

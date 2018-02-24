@@ -1,4 +1,4 @@
-defmodule LighthouseServiceWeb.NodeEventPublisher do
+defmodule LighthouseWeb.NodeEventPublisher do
   use GenServer
   require Logger
 
@@ -13,7 +13,7 @@ defmodule LighthouseServiceWeb.NodeEventPublisher do
 
   def handle_info({:lightbulb_nodes_updated, _nodes}, {channel}) do
     Logger.debug "#{__MODULE__} send update"
-    LighthouseServiceWeb.Endpoint.broadcast(channel, "updated", %{})
+    LighthouseWeb.Endpoint.broadcast(channel, "updated", %{})
     {:noreply, {channel}}
   end
 end

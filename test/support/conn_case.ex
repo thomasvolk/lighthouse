@@ -1,4 +1,4 @@
-defmodule LighthouseServiceWeb.ConnCase do
+defmodule LighthouseWeb.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -19,10 +19,10 @@ defmodule LighthouseServiceWeb.ConnCase do
     quote do
       # Import conveniences for testing with connections
       use Phoenix.ConnTest
-      import LighthouseServiceWeb.Router.Helpers
+      import LighthouseWeb.Router.Helpers
 
       # The default endpoint for testing
-      @endpoint LighthouseServiceWeb.Endpoint
+      @endpoint LighthouseWeb.Endpoint
     end
   end
 

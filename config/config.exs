@@ -6,11 +6,11 @@
 use Mix.Config
 
 # Configures the endpoint
-config :lighthouse_service, LighthouseServiceWeb.Endpoint,
+config :lighthouse, LighthouseWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "S4fna5XuJe9OHovm2b0s+wxGvBbQRhuX9SPpNGuYYw3Qif/T70YM1EA52FL+gfR2",
-  render_errors: [view: LighthouseServiceWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: LighthouseService.PubSub,
+  render_errors: [view: LighthouseWeb.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: Lighthouse.PubSub,
            adapter: Phoenix.PubSub.PG2],
   server: true,
   root: ".",

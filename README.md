@@ -1,4 +1,4 @@
-# LighthouseService
+# Lighthouse
 
 Web service for the [lighthouse](https://github.com/thomasvolk/lighthouse) application.
 

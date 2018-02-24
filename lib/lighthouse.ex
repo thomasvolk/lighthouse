@@ -1,6 +1,6 @@
-defmodule LighthouseService do
+defmodule Lighthouse do
   @moduledoc """
-  LighthouseService keeps the contexts that define your domain
+  Lighthouse keeps the contexts that define your domain
   and business logic.
 
   Contexts are also responsible for managing your data, regardless

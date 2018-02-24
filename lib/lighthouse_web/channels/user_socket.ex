@@ -1,9 +1,9 @@
-defmodule LighthouseServiceWeb.UserSocket do
+defmodule LighthouseWeb.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", LighthouseServiceWeb.RoomChannel
-  channel "node:*", LighthouseServiceWeb.NodeChannel
+  # channel "room:*", LighthouseWeb.RoomChannel
+  channel "node:*", LighthouseWeb.NodeChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
@@ -31,7 +31,7 @@ defmodule LighthouseServiceWeb.UserSocket do
   # Would allow you to broadcast a "disconnect" event and terminate
   # all active sockets and channels for a given user:
   #
-  #     LighthouseServiceWeb.Endpoint.broadcast("user_socket:#{user.id}", "disconnect", %{})
+  #     LighthouseWeb.Endpoint.broadcast("user_socket:#{user.id}", "disconnect", %{})
   #
   # Returning `nil` makes this socket anonymous.
   def id(_socket), do: nil

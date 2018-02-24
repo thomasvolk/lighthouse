@@ -1,14 +1,14 @@
-defmodule LighthouseServiceWeb.Endpoint do
-  use Phoenix.Endpoint, otp_app: :lighthouse_service
+defmodule LighthouseWeb.Endpoint do
+  use Phoenix.Endpoint, otp_app: :lighthouse
 
-  socket "/socket", LighthouseServiceWeb.UserSocket
+  socket "/socket", LighthouseWeb.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
   # You should set gzip to true if you are running phoenix.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/", from: :lighthouse_service, gzip: false,
+    at: "/", from: :lighthouse, gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
@@ -35,10 +35,10 @@ defmodule LighthouseServiceWeb.Endpoint do
   # Set :encryption_salt if you would also like to encrypt it.
   plug Plug.Session,
     store: :cookie,
-    key: "_lighthouse_service_key",
+    key: "_lighthouse_key",
     signing_salt: "ymQXDxnU"
 
-  plug LighthouseServiceWeb.Router
+  plug LighthouseWeb.Router
 
   @doc """
   Callback invoked for dynamically configuring the endpoint.

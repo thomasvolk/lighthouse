@@ -1,4 +1,4 @@
-defmodule LighthouseServiceWeb.ErrorHelpers do
+defmodule LighthouseWeb.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -32,9 +32,9 @@ defmodule LighthouseServiceWeb.ErrorHelpers do
     #     dgettext "errors", "is invalid"
     #
     if count = opts[:count] do
-      Gettext.dngettext(LighthouseServiceWeb.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(LighthouseWeb.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(LighthouseServiceWeb.Gettext, "errors", msg, opts)
+      Gettext.dgettext(LighthouseWeb.Gettext, "errors", msg, opts)
     end
   end
 end

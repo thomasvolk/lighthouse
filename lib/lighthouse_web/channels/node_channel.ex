@@ -1,4 +1,4 @@
-defmodule LighthouseServiceWeb.NodeChannel do
+defmodule LighthouseWeb.NodeChannel do
   use Phoenix.Channel
 
   def join("node:event", _message, socket) do
