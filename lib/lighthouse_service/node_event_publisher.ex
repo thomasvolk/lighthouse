@@ -7,11 +7,11 @@ defmodule LighthouseServiceWeb.NodeEventPublisher do
   end
 
   def init(state) do
-    Lighthouse.subscribe()
+    Lightbulb.subscribe()
     {:ok, state }
   end
 
-  def handle_info({:lighthouse_nodes_updated, _nodes}, {channel}) do
+  def handle_info({:lightbulb_nodes_updated, _nodes}, {channel}) do
     Logger.debug "#{__MODULE__} send update"
     LighthouseServiceWeb.Endpoint.broadcast(channel, "updated", %{})
     {:noreply, {channel}}

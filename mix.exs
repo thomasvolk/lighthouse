@@ -19,7 +19,7 @@ defmodule LighthouseService.Mixfile do
   def application do
     [
       mod: {LighthouseService.Application, []},
-      extra_applications: [:logger, :runtime_tools, :lighthouse]
+      extra_applications: [:logger, :runtime_tools, :lightbulb]
     ]
   end
 
@@ -39,7 +39,7 @@ defmodule LighthouseService.Mixfile do
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
       {:distillery, "~> 1.5", runtime: false},
-      {:lighthouse, git: "https://github.com/thomasvolk/lighthouse.git", tag: "master"}
+      {:lightbulb, git: "https://github.com/thomasvolk/lightbulb.git", tag: "master"}
     ]
   end
 end
